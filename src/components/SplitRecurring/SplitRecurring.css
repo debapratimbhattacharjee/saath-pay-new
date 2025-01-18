@@ -1,0 +1,119 @@
+/* Scope the CSS to only affect Recurring Expenses */
+.recurring-expenses-container {
+  
+  background: #dbedee; /* Dark theme background */
+  color: #ffffff; /* Light text for contrast */
+  width: 100%;
+  max-width: 420px;
+  margin: 20px auto;
+ 
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(124, 119, 119, 0.2);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background Color */
+body {
+  margin: 0;
+  padding: 50px;
+  background-color: #2a2a3b; /* Match background with container */
+}
+
+/* Headings */
+.recurring-expenses-container h2, 
+.recurring-expenses-container h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #2a2a3b;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Form for adding recurring expenses */
+.recurring-expenses-container .add-expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.recurring-expenses-container .add-expense-form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2a2a3b;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.recurring-expenses-container .add-expense-form input:focus {
+  background: #3a3a4b;
+}
+
+/* Add Expense Button */
+.recurring-expenses-container .add-expense-form button {
+  background: #0592e4; /* Vibrant gradient */
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.recurring-expenses-container .add-expense-form button:hover {
+  background: #047bb0;
+}
+
+/* List of recurring expenses */
+.recurring-expenses-container .expenses-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.recurring-expenses-container .expenses-list th, 
+.recurring-expenses-container .expenses-list td {
+  padding: 10px;
+  text-align: left;
+}
+
+.recurring-expenses-container .expenses-list th {
+  background: #3a3a4b;
+  color: #ade7ea;
+  font-weight: bold;
+}
+
+.recurring-expenses-container .expenses-list td {
+  background: #2a2a3b;
+  color: #ffffff;
+}
+
+/* Total expenses summary */
+.recurring-expenses-container .total-expenses {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f3fcfb;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .recurring-expenses-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .recurring-expenses-container .add-expense-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
