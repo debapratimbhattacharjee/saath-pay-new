@@ -1,8 +1,4 @@
 
-body {
-  background: linear-gradient(269.94deg, rgba(30, 113, 237, 0.58) -2.74%, rgba(30, 113, 237, 0) 89.44%);
-
-}
 
 .logo-image {
   
@@ -22,7 +18,7 @@ body {
 ul {
   padding-top: 20px;
   padding-bottom: 10px;
-  background: linear-gradient(269.94deg, rgba(30, 113, 237, 0.58) -2.74%, rgba(30, 113, 237, 0) 89.44%);
+  
   border-radius: 0px 100px 1000px 0px;
 }
 
@@ -39,9 +35,11 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
+  
   .logo-image {
-    width: 200px;
-    margin: 25px 50px;
+   
+    width: 300px;
+    margin: 25px 25px;
   }
 
   .navbar-toggler {
@@ -66,8 +64,4 @@ ul {
     margin-left: 0px;
   }
 
-  ul {
-    padding: 200px;
-    background: linear-gradient(269.94deg, rgba(30, 113, 237, 0.58) -2.74%, rgba(30, 113, 237, 0) 89.44%);
-  }
 }

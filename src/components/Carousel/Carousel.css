@@ -109,60 +109,79 @@ input[type=number] {
   z-index: 150; /* Ensures it stays above other elements */
 }
 
-/* Responsive Layout */
+
+/* Responsive Layout for Mobile */
 @media only screen and (max-width: 600px) {
   .carousel {
-      width: 90%;
-      padding-bottom: 50px;
+    margin-top: -30px;
+    width: 95%; /* Increased width for better fit */
+    padding-bottom: 60px; /* Reduced padding for smaller screens */
   }
 
   .carousel-indicators {
-      top: 120px;
-      right: 170px;
-      margin-left: 0px;
+    margin-top: 90px;
+    top: 100px;
+    right: px; /* Adjusted for better alignment */
+    margin-left: 0px;
   }
 
   .carousel-inner {
-      margin-top: 30px;
-      margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 10px; /* Reduced margin for smaller viewports */
   }
 
   .carousel-item h2 {
-      font-weight: bold;
-      color: #f1f1f1;
-      max-width: 300px;
-      font-size: 22px;
+    margin-top: 50px;
+    font-weight: bold;
+    color: #f1f1f1;
+    max-width: 100%; /* Full-width headlines */
+    font-size: 30px; /* Reduced font size for better readability */
+    margin-left: 20px; /* Center align text */
+    text-align: left;
   }
 
   .carousel-item p {
-      color: #f1f1f1;
-      margin-left: px;
-      max-width: 250px;
-      font-size: 12px;
+    color: #f1f1f1;
+    max-width: 90%; /* Fit within the screen */
+    font-size: 14px; /* Adjusted for readability */
+    text-align: left; /* Center text for symmetry */
+    margin: 0 auto; /* Center content horizontally */
   }
 
   .d-flex {
-      margin-left: 10px;
-      padding-bottom: 40px;
-      flex-direction: column;
-      max-width: 300px;
+    margin: 0 auto; /* Center align container */
+    padding-bottom: 30px;
+    flex-direction: column;
+    max-width: 90%; /* Fit within screen */
+    align-items: center;
   }
 
-  /* Adjusting Phone Input & Button */
+  /* Phone Input & Button Adjustments */
   .phone-container {
-      width: 100%;
-      padding: 0 20px;
+    width: 90%;
+    padding: 10px;
+    gap: 10px; /* Reduced gap for smaller screens */
   }
 
   input[type="number"] {
-      width: 90%;
-      padding: 14px;
-      font-size: 18px;
+    width: 90%; /* Full-width input */
+    padding: 12px; /* Optimized padding */
+    font-size: 16px; /* Readable font size */
+    border-radius: 8px; /* Softer corners */
   }
 
   .get-started-btn {
-      width: 90%;
-      padding: 16px;
-      font-size: 20px;
+    width: 100%; /* Full-width button */
+    padding: 12px; /* Adjusted padding */
+    font-size: 18px; /* Scaled text */
+    margin: 10px 0 0 0; /* Spacing from the input */
+  }
+
+  /* Coin Animation Adjustments */
+  .coin-animation-container {
+    top: 20px;
+    right: 20px; /* Adjust for smaller viewports */
+    width: 100px; /* Scaled-down size */
+    height: 100px; /* Scaled-down size */
   }
 }

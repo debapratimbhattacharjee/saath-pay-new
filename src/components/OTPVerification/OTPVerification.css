@@ -5,13 +5,14 @@
     justify-content: flex-start; /* Aligns content to the top */
     height: 100vh; /* Full viewport height */
     padding: 20px;
-   color: #f1f1f1;
+   color: #fff;
   }
   
   .otp-container {
+    color: #fff;
     max-width: 400px;
     width: 100%; /* Full width for smaller screens */
-    background: rgba(26, 48, 65, 0.39);
+    background: rgba(12, 39, 61, 0.39);
     border: 1px solid #33E6F6;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slight shadow for a polished look */
     border-radius: 15px;
@@ -21,12 +22,14 @@
   }
   
   .otp-container h2 {
+    color: #f3f1f1;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
   }
   
   .otp-container p {
+    color: rgb(148, 159, 168);
     font-size: 16px;
     margin-bottom: 20px;
   }
@@ -76,10 +79,21 @@
   
   /* Mobile View Adjustments */
   @media only screen and (max-width: 600px) {
+    
+    .otplogo-image {
+          width: 150px;
+          margin: 25px 25px;
+      }
     .otp-container {
-      padding: 20px 10px;
-      margin-top: 0px; /* Optional: Shift OTP container up on mobile */
+      
+      padding: 10px 9px; /* Reduced padding for smaller size */
+      margin-top: 0px; /* Keeps the container aligned */
+      width: 90%; /* Adjusts the width for a smaller appearance */
+      max-width: 300px; /* Limits the maximum width */
+      font-size: 14px; /* Adjusts font size for content */
+      margin: -30px; /* Centers the container horizontally */
     }
+    
   
     .otp-container h2 {
       font-size: 20px;

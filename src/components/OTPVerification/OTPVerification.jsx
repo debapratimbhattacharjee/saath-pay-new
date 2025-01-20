@@ -34,7 +34,7 @@ const OTPVerification = () => {
     <div className="otp-section mt-sm-5">
       <div className="otp-container">
         <div className="logo-container">
-          <img src={logo1} alt="Logo" className="logo-image" />
+          <img src={logo1} alt="Logo" className="otplogo-image" />
         </div>
         <h2>Enter the OTP</h2>
         <p>We sent a 6-digit OTP to your registered phone number.</p>
